@@ -1,0 +1,534 @@
+﻿<html>
+
+<head>
+<meta charset="utf-8">
+<style>
+img {
+	width: 60px;
+}
+.header {
+	text-align: center;
+	font-size: 1.5em;
+	background-color: rgba(67, 47, 47, 1);
+	color: white;
+	padding: 5px;
+	margin-right: 5px;
+}
+.content {
+	text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 20px;
+}
+.content>div {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	margin-top: 5px;
+	margin-right: 5px;
+}
+.content>div:empty {
+	display: none;
+}
+.content>div>div{
+	display: flex;
+	flex-wrap: wrap;
+}
+.content>div>div>div{
+	flex-grow: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.content>div:before,
+.content>div>div{
+	margin-bottom: 0.5ex;
+	border: 1px solid rgba(67, 47, 47, 1);
+	padding: 0.5ex;
+}
+.content>div:before {
+	content: '';
+	height: 60px;
+	border-radius: 10px;
+	box-shadow:
+		inset 2px 2px 4px rgba(255,255,255,0.4),
+		inset -2px -2px 4px rgba(0,0,0,0.4);
+	text-shadow:1px 1px 2px rgba(255,255,255,0.8);
+	background-color: rgba(67, 47, 47, .4);
+	line-height: 50px;
+	height: 50px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.content>div:nth-child(1):before {
+	content: '常规';
+}
+.content>div:nth-child(2):before {
+	content: '强敌';
+}
+.content>div:nth-child(3):before {
+	background-image: url('assets/101title.png');
+}
+.content>div:nth-child(4):before {
+	background-image: url('assets/102title.png');
+}
+.content>div:nth-child(5):before {
+	background-image: url('assets/103title.png');
+}
+.content>div:nth-child(6):before {
+	background-image: url('assets/104title.png');
+}
+.content>div:nth-child(7):before {
+	background-image: url('assets/105title.png');
+}
+.content>div:nth-child(8):before {
+	background-image: url('assets/106title.png');
+}
+.content>div:nth-child(9):before {
+	background-image: url('assets/107title.png');
+}
+.content>div:nth-child(10):before {
+	background-image: url('assets/108title.png');
+}
+.content>div:nth-child(11):before {
+	background-image: url('assets/109title.png');
+}
+.content>div:nth-child(12):before {
+	background-image: url('assets/110title.png');
+}
+.content>div:nth-child(13):before {
+	background-image: url('assets/111title.png');
+}
+.content>div:nth-child(14):before {
+	background-image: url('assets/112title.png');
+}
+.content>div:nth-child(15):before {
+	background-image: url('assets/10006.png');
+}
+.content>div:nth-child(16):before {
+	background-image: url('assets/10012.png');
+}
+.content>div:nth-child(17):before {
+	background-image: url('assets/10026.png');
+}
+.content>div:nth-child(18):before {
+	background-image: url('assets/10040.png');
+}
+</style>
+</head>
+<body>
+<div>
+<div class='header'>消除横向/纵向1列</div>
+<div class='content'>
+	<div>
+		<div>
+			<div class="other"><img src="assets/fr_0079_0_th.png" /><img src="assets/fr_0079_1_th.png" /></div>
+			<div class="other"><img src="assets/fr_0080_0_th.png" /><img src="assets/fr_0080_1_th.png" /></div>
+		</div>
+	</div>
+</div>
+
+<div class='header'>横向/纵向多列消除</div>
+<div class='content'>
+	<div><div>
+		<div class="mob"><img src="assets/fr_0001_0_th.png" /><img src="assets/fr_0001_1_th.png" /></div>
+		<div class="reg"><img src="assets/fr_0002_0_th.png" /><img src="assets/fr_0002_1_th.png" /></div>
+		<div class="rit"><img src="assets/fr_0003_0_th.png" /><img src="assets/fr_0003_1_th.png" /></div>
+		<div class="ter"><img src="assets/fr_0004_0_th.png" /><img src="assets/fr_0004_1_th.png" /></div>
+		<div class="ekb"><img src="assets/fr_0005_0_th.png" /><img src="assets/fr_0005_1_th.png" /></div>
+	</div></div>
+	<div><div>
+		<div class="other"><img src="assets/fr_0118_0_th.png" /><img src="assets/fr_0118_1_th.png" />4列</div>
+	</div></div>
+	<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+	<div><div>
+		<div class="reg"><img src="assets/fr_0167_0_th.png" /><img src="assets/fr_0167_1_th.png" />5行</div>
+	</div></div>
+	<div><div>
+		<div class="mob"><img src="assets/fr_0172_0_th.png" /><img src="assets/fr_0172_1_th.png" />全部</div>
+	</div></div>
+	<div><div>
+		<div class="rit"><img src="assets/fr_0180_0_th.png" /><img src="assets/fr_0180_1_th.png" />5列</div>
+	</div></div>
+	<div><div>
+		<div class="ter"><img src="assets/fr_0187_0_th.png" /><img src="assets/fr_0187_1_th.png" />5行</div>
+	</div></div>
+	<div><div>
+		<div class="other"><img src="assets/fr_0190_0_th.png" /><img src="assets/fr_0190_1_th.png" />全部</div>
+		<div class="other"><img src="assets/fr_0194_0_th.png" /><img src="assets/fr_0194_1_th.png" />5行</div>
+	</div></div>
+	<div><div>
+		<div class="other"><img src="assets/fr_0203_0_th.png" /><img src="assets/fr_0203_1_th.png" />5列</div>
+	</div></div>
+</div>
+
+<div class='header'>双十字消除</div>
+<div class='content'>
+	<div></div><div></div>
+	<div><div>
+		<div><img src="assets/fr_0014_0_th.png" /><img src="assets/fr_0014_1_th.png" /></div>
+		<div><img src="assets/fr_0071_0_th.png" /><img src="assets/fr_0071_1_th.png" /></div>
+	</div></div>
+	<div><div>
+		<div><img src="assets/fr_0072_0_th.png" /><img src="assets/fr_0072_1_th.png" /></div>
+	</div></div>
+	<div></div><div></div><div></div><div></div><div></div>
+	<div><div>
+		<div><img src="assets/fr_0138_0_th.png" /><img src="assets/fr_0138_1_th.png" /></div>
+	</div></div>
+	<div></div><div></div>
+	<div><div>
+		<div><img src="assets/fr_0170_0_th.png" /><img src="assets/fr_0170_1_th.png" /></div>
+	</div></div>
+</div>
+
+<div class='header'>消除十字/X字</div>
+<div class='content'>
+	<div><div>
+		<div><img src="assets/fr_0006_0_th.png" /><img src="assets/fr_0006_1_th.png" /></div>
+		<div><img src="assets/fr_0008_0_th.png" /><img src="assets/fr_0008_1_th.png" /></div>
+		<div><img src="assets/fr_0010_0_th.png" /><img src="assets/fr_0010_1_th.png" /></div>
+		<div><img src="assets/fr_0011_0_th.png" /><img src="assets/fr_0011_1_th.png" /></div>
+		<div><img src="assets/fr_0024_0_th.png" /><img src="assets/fr_0024_1_th.png" /></div>
+	</div></div>
+</div>
+
+<div class='header'>消除单色</div>
+<div class='content'>
+	<div><div>
+		<div><img src="assets/fr_0007_0_th.png" /><img src="assets/fr_0007_1_th.png" /></div>
+		<div><img src="assets/fr_0009_0_th.png" /><img src="assets/fr_0009_1_th.png" /></div>
+		<div><img src="assets/fr_0012_0_th.png" /><img src="assets/fr_0012_1_th.png" /></div>
+		<div><img src="assets/fr_0020_0_th.png" /><img src="assets/fr_0020_1_th.png" /></div>
+		<div><img src="assets/fr_0021_0_th.png" /><img src="assets/fr_0021_1_th.png" /></div>
+		<div><img src="assets/fr_0022_0_th.png" /><img src="assets/fr_0022_1_th.png" /></div>
+	</div></div>
+	<div><div>
+		<div><img src="assets/fr_0127_0_th.png" /><img src="assets/fr_0127_1_th.png" /></div>
+		<div><img src="assets/fr_0134_0_th.png" /><img src="assets/fr_0134_1_th.png" /></div>
+	</div></div>
+	<div></div><div></div><div></div>
+	<div><div>
+		<div><img src="assets/fr_0100_0_th.png" /><img src="assets/fr_0100_1_th.png" /></div>
+	</div></div>
+	<div><div>
+		<div><img src="assets/fr_0112_0_th.png" /><img src="assets/fr_0112_1_th.png" /></div>
+	</div></div>
+	<div><div>
+		<div><img src="assets/fr_0122_0_th.png" /><img src="assets/fr_0122_1_th.png" /></div>
+		<div><img src="assets/fr_0123_0_th.png" /><img src="assets/fr_0123_1_th.png" /></div>
+	</div></div>
+	<div></div><div></div>
+	<div><div>
+		<div><img src="assets/fr_0107_0_th.png" /><img src="assets/fr_0107_1_th.png" /></div>
+	</div></div>
+	<div><div>
+		<div><img src="assets/fr_0161_0_th.png" /><img src="assets/fr_0161_1_th.png" /></div>
+	</div></div>
+	<div><div>
+		<div><img src="assets/fr_0169_0_th.png" /><img src="assets/fr_0169_1_th.png" /></div>
+	</div></div>
+	<div></div><div></div>
+	<div><div>
+		<div class='ekb'><img src="assets/fr_0188_0_th.png" /><img src="assets/fr_0188_1_th.png" /></div>
+	</div></div>
+</div>
+
+<div class='header'>变色</div>
+<div class='content'>
+	<div></div><div></div><div></div>
+	<div><div>
+		<div><img src="assets/fr_0073_0_th.png" /><img src="assets/fr_0073_1_th.png" /></div>
+		<div><img src="assets/fr_0074_0_th.png" /><img src="assets/fr_0074_1_th.png" /></div>
+		<div><img src="assets/fr_0075_0_th.png" /><img src="assets/fr_0075_1_th.png" /></div>
+	</div></div>
+	<div><div>
+		<div><img src="assets/fr_0081_0_th.png" /><img src="assets/fr_0081_1_th.png" /></div>
+		<div><img src="assets/fr_0085_0_th.png" /><img src="assets/fr_0085_1_th.png" /></div>
+	</div></div>
+	<div><div>
+		<div><img src="assets/fr_0098_0_th.png" /><img src="assets/fr_0098_1_th.png" /></div>
+	</div></div>
+	<div></div><div></div>
+	<div><div>
+		<div><img src="assets/fr_0132_0_th.png" /><img src="assets/fr_0132_1_th.png" /></div>
+	</div></div>
+</div>
+
+<div class='header'>特殊变色</div>
+<div class='content'>
+	<div></div>
+	<div><div>
+		<div><img src="assets/fr_0140_0_th.png" /><img src="assets/fr_0140_1_th.png" />青绿→紫</div>
+		<div><img src="assets/fr_0141_0_th.png" /><img src="assets/fr_0141_1_th.png" />水青→绿</div>
+	</div></div>
+	<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+	<div><div>
+		<div><img src="assets/fr_0164_0_th.png" /><img src="assets/fr_0164_1_th.png" />水紫→黄</div>
+	</div></div>
+	<div></div>
+	<div><div>
+		<div><img src="assets/fr_0177_0_th.png" /><img src="assets/fr_0177_1_th.png" />红黄→青</div>
+	</div></div>
+	<div><div>
+		<div class='ter'><img src="assets/fr_0181_0_th.png" /><img src="assets/fr_0181_1_th.png" />紫绿→红</div>
+		<div class='other'><img src="assets/fr_0183_0_th.png" /><img src="assets/fr_0183_1_th.png" />红黄→水</div>
+	</div></div>
+	<div><div>
+		<div class='other'><img src="assets/fr_0189_0_th.png" /><img src="assets/fr_0189_1_th.png" />青绿→黄</div>
+	</div></div>
+	<div></div>
+	<div><div>
+		<div class='reg'><img src="assets/fr_0199_0_th.png" /><img src="assets/fr_0199_1_th.png" />水紫→红</div>
+	</div></div>
+</div>
+
+<div class='header'>随机消除</div>
+<div class='content'>
+	<div></div>
+	<div><div>
+		<div><img src="assets/fr_0114_0_th.png" /><img src="assets/fr_0114_1_th.png" /></div>
+	</div></div>
+	<div><div>
+		<div><img src="assets/fr_0069_0_th.png" /><img src="assets/fr_0069_1_th.png" /></div>
+		<div><img src="assets/fr_0070_0_th.png" /><img src="assets/fr_0070_1_th.png" /></div>
+	</div></div>
+	<div><div>
+		<div><img src="assets/fr_0076_0_th.png" /><img src="assets/fr_0076_1_th.png" /></div>
+		<div><img src="assets/fr_0077_0_th.png" /><img src="assets/fr_0077_1_th.png" /></div>
+		<div><img src="assets/fr_0078_0_th.png" /><img src="assets/fr_0078_1_th.png" /></div>
+	</div></div>
+	<div><div>
+		<div><img src="assets/fr_0082_0_th.png" /><img src="assets/fr_0082_1_th.png" /></div>
+		<div><img src="assets/fr_0083_0_th.png" /><img src="assets/fr_0083_1_th.png" /></div>
+	</div></div>
+	<div><div>
+		<div><img src="assets/fr_0097_0_th.png" /><img src="assets/fr_0097_1_th.png" /></div>
+	</div></div>
+	<div><div>
+		<div><img src="assets/fr_0110_0_th.png" /><img src="assets/fr_0110_1_th.png" /></div>
+		<div><img src="assets/fr_0111_0_th.png" /><img src="assets/fr_0111_1_th.png" /></div>
+	</div></div>
+	<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+	<div><div>
+		<div class="mob"><img src="assets/fr_0184_0_th.png" /><img src="assets/fr_0184_1_th.png" /></div>
+	</div></div>
+	<div></div>
+	<div><div>
+		<div class="ekb"><img src="assets/fr_0202_0_th.png" /><img src="assets/fr_0202_1_th.png" /></div>
+	</div></div>
+</div>
+
+<div class='header'>消除外框</div>
+<div class='content'>
+	<div><div>
+		<div><img src="assets/fr_0126_0_th.png" /><img src="assets/fr_0126_1_th.png" /></div>
+	</div></div>
+	<div></div><div></div><div></div>
+	<div><div>
+		<div><img src="assets/fr_0084_0_th.png" /><img src="assets/fr_0084_1_th.png" /></div>
+	</div></div>
+	<div><div>
+		<div><img src="assets/fr_0096_0_th.png" /><img src="assets/fr_0096_1_th.png" /></div>
+		<div><img src="assets/fr_0099_0_th.png" /><img src="assets/fr_0099_1_th.png" /></div>
+	</div></div>
+	<div><div>
+		<div><img src="assets/fr_0113_0_th.png" /><img src="assets/fr_0113_1_th.png" /></div>
+	</div></div>
+	<div></div>
+	<div><div>
+		<div><img src="assets/fr_0131_0_th.png" /><img src="assets/fr_0131_1_th.png" /></div>
+	</div></div>
+	<div><div>
+		<div><img src="assets/fr_0139_0_th.png" /><img src="assets/fr_0139_1_th.png" /></div>
+	</div></div>
+	<div><div>
+		<div><img src="assets/fr_0104_0_th.png" /><img src="assets/fr_0104_1_th.png" /></div>
+	</div></div>
+	<div><div>
+		<div><img src="assets/fr_0163_0_th.png" /><img src="assets/fr_0163_1_th.png" /></div>
+	</div></div>
+	<div></div>
+	<div><div>
+		<div><img src="assets/fr_0174_0_th.png" /><img src="assets/fr_0174_1_th.png" /></div>
+	</div></div>
+</div>
+
+<div class='header'>生成彩球</div>
+<div class='content'>
+	<div></div>
+	<div><div>
+		<div class='other'><img src="assets/fr_0120_0_th.png" /><img src="assets/fr_0120_1_th.png" /></div>
+		<div class='other'><img src="assets/fr_0197_0_th.png" /><img src="assets/fr_0197_1_th.png" /></div>
+	</div></div>
+	<div></div><div></div><div></div><div></div>
+	<div><div>
+		<div><img src="assets/fr_0109_0_th.png" /><img src="assets/fr_0109_1_th.png" /></div>
+	</div></div>
+	<div><div>
+		<div><img src="assets/fr_0121_0_th.png" /><img src="assets/fr_0121_1_th.png" /></div>
+	</div></div>
+	<div><div>
+		<div><img src="assets/fr_0129_0_th.png" /><img src="assets/fr_0129_1_th.png" /></div>
+	</div></div>
+	<div><div>
+		<div><img src="assets/fr_0137_0_th.png" /><img src="assets/fr_0137_1_th.png" /></div>
+	</div></div>
+	<div><div>
+		<div><img src="assets/fr_0108_0_th.png" /><img src="assets/fr_0108_1_th.png" /></div>
+		<div><img src="assets/fr_0109_0_th.png" /><img src="assets/fr_0109_1_th.png" /></div>
+	</div></div>
+	<div></div><div></div>
+	<div><div>
+		<div><img src="assets/fr_0175_0_th.png" /><img src="assets/fr_0175_1_th.png" /></div>
+	</div></div>
+	<div><div>
+		<div class='ekb'><img src="assets/fr_0182_0_th.png" /><img src="assets/fr_0182_1_th.png" /></div>
+	</div></div>
+</div>
+
+<div class='header'>生成彩球（快）</div>
+<div class='content'>
+	<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+	<div><div>
+		<div><img src="assets/fr_0136_0_th.png" /><img src="assets/fr_0136_1_th.png" /></div>
+	</div></div>
+	<div><div>
+		<div><img src="assets/fr_0106_0_th.png" /><img src="assets/fr_0106_1_th.png" /></div>
+	</div></div>
+	<div><div>
+		<div><img src="assets/fr_0160_0_th.png" /><img src="assets/fr_0160_1_th.png" /></div>
+	</div></div>
+	<div><div>
+		<div><img src="assets/fr_0168_0_th.png" /><img src="assets/fr_0168_1_th.png" /></div>
+	</div></div>
+	<div></div><div></div><div></div>
+	<div><div>
+		<div class='other'><img src="assets/fr_0193_0_th.png" /><img src="assets/fr_0193_1_th.png" /></div>
+	</div></div>
+</div>
+
+<div class='header'>生成单行/单列消除</div>
+<div class='content'>
+	<div><div>
+		<div><img src="assets/fr_0102_0_th.png" /><img src="assets/fr_0102_1_th.png" /></div>
+		<div><img src="assets/fr_0103_0_th.png" /><img src="assets/fr_0103_1_th.png" /></div>
+	</div></div>
+	<div></div><div></div><div></div><div></div><div></div><div></div>
+	<div><div>
+		<div><img src="assets/fr_0125_0_th.png" /><img src="assets/fr_0125_1_th.png" /></div>
+	</div></div>
+	<div><div>
+		<div><img src="assets/fr_0133_0_th.png" /><img src="assets/fr_0133_1_th.png" /></div>
+	</div></div>
+	<div></div><div></div>
+	<div><div>
+		<div><img src="assets/fr_0162_0_th.png" /><img src="assets/fr_0162_1_th.png" /></div>
+	</div></div>
+	<div></div>
+	<div><div>
+		<div><img src="assets/fr_0176_0_th.png" /><img src="assets/fr_0176_1_th.png" /></div>
+	</div></div>
+	<div></div>
+	<div><div>
+		<div class='reg'><img src="assets/fr_0185_0_th.png" /><img src="assets/fr_0185_1_th.png" /></div>
+	</div></div>
+	<div><div>
+		<div class='other'><img src="assets/fr_0191_0_th.png" /><img src="assets/fr_0191_1_th.png" /></div>
+	</div></div>
+	<div><div>
+		<div class='rit'><img src="assets/fr_0200_0_th.png" /><img src="assets/fr_0200_1_th.png" /></div>
+	</div></div>
+</div>
+
+<div class='header'>单色转单行/单列消除</div>
+<div class='content'>
+	<div></div>
+	<div><div>
+		<div><img src="assets/fr_0119_0_th.png" /><img src="assets/fr_0119_1_th.png" /></div>
+		<div><img src="assets/fr_0115_0_th.png" /><img src="assets/fr_0115_1_th.png" /></div>
+		<div><img src="assets/fr_0116_0_th.png" /><img src="assets/fr_0116_1_th.png" /></div>
+	</div></div>
+	<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+	<div><div>
+		<div><img src="assets/fr_0166_0_th.png" /><img src="assets/fr_0166_1_th.png" /></div>
+	</div></div>
+	<div></div><div></div><div></div>
+	<div><div>
+		<div class='other'><img src="assets/fr_0192_0_th.png" /><img src="assets/fr_0192_1_th.png" /></div>
+	</div></div>
+	<div><div>
+		<div class='ter'><img src="assets/fr_0201_0_th.png" /><img src="assets/fr_0201_1_th.png" /></div>
+	</div></div>
+</div>
+
+<div class='header'>生成炸弹</div>
+<div class='content'>
+	<div><div>
+		<div><img src="assets/fr_0101_0_th.png" /><img src="assets/fr_0101_1_th.png" /></div>
+	</div></div>
+	<div><div>
+		<div class='other'><img src="assets/fr_0195_0_th.png" /><img src="assets/fr_0195_1_th.png" /></div>
+	</div></div><div></div><div></div><div></div><div></div><div></div>
+	<div><div>
+		<div><img src="assets/fr_0124_0_th.png" /><img src="assets/fr_0124_1_th.png" /></div>
+	</div></div>
+	<div><div>
+		<div><img src="assets/fr_0128_0_th.png" /><img src="assets/fr_0128_1_th.png" /></div>
+		<div><img src="assets/fr_0130_0_th.png" /><img src="assets/fr_0130_1_th.png" /></div>
+	</div></div>
+	<div><div>
+		<div><img src="assets/fr_0135_0_th.png" /><img src="assets/fr_0135_1_th.png" /></div>
+	</div></div>
+	<div><div>
+		<div><img src="assets/fr_0105_0_th.png" /><img src="assets/fr_0105_1_th.png" /></div>
+	</div></div>
+	<div><div>
+		<div><img src="assets/fr_0165_0_th.png" /><img src="assets/fr_0165_1_th.png" /></div>
+	</div></div>
+	<div></div>
+	<div><div>
+		<div><img src="assets/fr_0173_0_th.png" /><img src="assets/fr_0173_1_th.png" /></div>
+	</div></div>
+	<div><div>
+		<div class='reg'><img src="assets/fr_0179_0_th.png" /><img src="assets/fr_0179_1_th.png" /></div>
+	</div></div>
+	<div><div>
+		<div class='rit'><img src="assets/fr_0186_0_th.png" /><img src="assets/fr_0186_1_th.png" /></div>
+	</div></div>
+	<div></div>
+	<div><div>
+		<div class='mob'><img src="assets/fr_0198_0_th.png" /><img src="assets/fr_0198_1_th.png" /></div>
+	</div></div>
+</div>
+
+<div class='header'>FEVER TIME</div>
+<div class='content'>
+	<div></div>
+	<div><div>
+		<div class="other"><img src="assets/fr_0117_0_th.png" /><img src="assets/fr_0117_1_th.png" /></div>
+	</div></div>
+	<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+	<div><div>
+		<div class="mob"><img src="assets/fr_0178_0_th.png" /><img src="assets/fr_0178_1_th.png" /></div>
+	</div></div>
+</div>
+
+<div class='header'>消除增加经验值</div>
+<div class='content'>
+	<div><div>
+		<div><img src="assets/fr_0023_0_th.png" /><img src="assets/fr_0023_1_th.png" /></div>
+	</div></div>
+</div>
+
+<div class='header'>消除增加金币</div>
+<div class='content'>
+	<div><div>
+		<div><img src="assets/fr_0087_0_th.png" /><img src="assets/fr_0087_1_th.png" /></div>
+		<div><img src="assets/fr_0088_0_th.png" /><img src="assets/fr_0088_1_th.png" /></div>
+	</div></div>
+</div>
+</div>
+</body>
+</html>

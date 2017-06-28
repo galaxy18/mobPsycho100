@@ -1,0 +1,95 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="common.css" type="text/css" />
+<style>
+ #canvas1{
+ 	display:none;
+ }
+</style>
+</head>
+<body>
+<div style="display:flex; flex-direction: column; height: 100%;">
+	<!-- <div>
+	<span>Animation:</span><select id="animationList"></select>
+	</div> -->
+	<div style="display:flex;justify-content: center;">
+		<div class='option'>
+			<div class="chara">
+				<div data=''>全部</div>
+				<div data='モブ'>モブ</div>
+				<div data='霊幻'>霊幻</div>
+				<div data='律'>律</div>
+				<div data='テル'>テル</div>
+				<div data='エクボ'>エクボ</div>
+			</div>
+		</div>
+		<div class="control" onclick="scrollitems(-1)">
+			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				width="60px" height="60px" viewBox="0 0 1536 1536" enable-background="new 0 0 1536 3072"
+				xml:space="preserve">
+				<g id="Rounds">
+					<path opacity="0.21" d="M1536,768c0-139.33-34.33-267.83-103-385.5c-68.67-117.67-161.83-210.83-279.5-279.5
+						C1035.83,34.33,907.33,0,768,0C628.67,0,500.17,34.33,382.5,103C264.83,171.67,171.67,264.83,103,382.5S0,628.67,0,768
+						c0,139.33,34.33,267.83,103,385.5c68.67,117.67,161.83,210.83,279.5,279.5c117.67,68.67,246.17,103,385.5,103
+						c139.33,0,267.83-34.33,385.5-103c117.67-68.67,210.83-161.83,279.5-279.5C1501.67,1035.83,1536,907.33,1536,768z"/>
+				</g>
+				<g id="Arrows_x28_original_size_x29_" display="none">
+					<path display="inline" fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" d="M909,269l102,102c12.67,12.67,19,27.67,19,45
+						s-6.33,32.33-19,45L704,768l307,307c12.67,12.67,19,27.67,19,45c0,17.33-6.33,32.33-19,45l-102,102c-12.67,12.67-27.67,19-45,19
+						c-17.33,0-32.33-6.33-45-19L365,813c-12.67-12.67-19-27.67-19-45c0-17.33,6.33-32.33,19-45l454-454c12.67-12.67,27.67-19,45-19
+						C881.33,250,896.33,256.33,909,269z"/>
+				</g>
+				<g id="Arrows">
+					<path fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" d="M875.85,343.85l86.7,86.7c10.77,10.77,16.15,23.52,16.15,38.25
+						c0,14.73-5.38,27.48-16.15,38.25L701.6,768l260.95,260.95c10.77,10.77,16.15,23.52,16.15,38.25c0,14.73-5.38,27.48-16.15,38.25
+						l-86.7,86.7c-10.77,10.77-23.52,16.15-38.25,16.15c-14.73,0-27.48-5.38-38.25-16.15l-385.9-385.9
+						c-10.77-10.77-16.15-23.52-16.15-38.25c0-14.73,5.38-27.48,16.15-38.25l385.9-385.9c10.77-10.77,23.52-16.15,38.25-16.15
+						C852.33,327.7,865.08,333.08,875.85,343.85z"/>
+				</g>
+			</svg>
+			<div></div>
+		</div>
+		<div id="characterList"></div>
+		<div class="control" onclick="scrollitems(1)">
+			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				width="60px" height="60px" viewBox="0 1536 1536 1536" enable-background="new 0 0 1536 3072"
+				xml:space="preserve">
+				<g id="Rounds">
+					<path opacity="0.21" d="M103,2689.5c68.67,117.67,161.83,210.83,279.5,279.5c117.67,68.67,246.17,103,385.5,103
+						c139.33,0,267.83-34.33,385.5-103c117.67-68.67,210.83-161.83,279.5-279.5c68.67-117.67,103-246.17,103-385.5
+						c0-139.33-34.33-267.83-103-385.5c-68.67-117.67-161.83-210.83-279.5-279.5c-117.67-68.67-246.17-103-385.5-103
+						c-139.33,0-267.83,34.33-385.5,103c-117.67,68.67-210.83,161.83-279.5,279.5C34.33,2036.17,0,2164.67,0,2304
+						C0,2443.33,34.33,2571.83,103,2689.5z"/>
+				</g>
+				<g id="Arrows_x28_original_size_x29_" display="none">
+					<path display="inline" fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" d="M672,1786c17.33,0,32.33,6.33,45,19l454,454
+						c12.67,12.67,19,27.67,19,45c0,17.33-6.33,32.33-19,45l-454,454c-12.67,12.67-27.67,19-45,19c-17.33,0-32.33-6.33-45-19l-102-102
+						c-12.67-12.67-19-27.67-19-45c0-17.33,6.33-32.33,19-45l307-307l-307-307c-12.67-12.67-19-27.67-19-45c0-17.33,6.33-32.33,19-45
+						l102-102C639.67,1792.33,654.67,1786,672,1786z"/>
+				</g>
+				<g id="Arrows">
+					<path fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" d="M698.4,1863.7c14.73,0,27.48,5.38,38.25,16.15l385.9,385.9
+						c10.77,10.77,16.15,23.52,16.15,38.25c0,14.73-5.38,27.48-16.15,38.25l-385.9,385.9c-10.77,10.77-23.52,16.15-38.25,16.15
+						c-14.73,0-27.48-5.38-38.25-16.15l-86.7-86.7c-10.77-10.77-16.15-23.52-16.15-38.25c0-14.73,5.38-27.48,16.15-38.25L834.4,2304
+						l-260.95-260.95c-10.77-10.77-16.15-23.52-16.15-38.25c0-14.73,5.38-27.48,16.15-38.25l86.7-86.7
+						C670.92,1869.08,683.67,1863.7,698.4,1863.7z"/>
+				</g>
+			</svg>
+			<div></div>
+		</div>
+	</div>
+	<div id="CRCharacter">
+		<!-- <canvas id="canvas1" class="CRCharacter" charaid="10010130" weapon="blade01"></canvas> -->
+		<canvas id="canvas1"></canvas>
+		<canvas id="canvas2"></canvas>
+	</div>
+</div>
+</body>
+<script src="build/spine-webgl2.js"></script>
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/mob100_spine.js"></script>
+<script src="js/mob100_CharacterTable.js"></script>
+<script src="js/mob100_UI.js"></script>
+<script></script>
+</html>
